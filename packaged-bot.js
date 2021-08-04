@@ -12,6 +12,7 @@ const Discord = require('discord.js');
 const bot1 = new Discord.Client();
 const bot2 = new Discord.Client();
 const bot3 = new Discord.Client();
+const moderator = new Discord.Client();
 const { exec } = require('child_process');
 
 var nextBotId = 0;
@@ -142,6 +143,13 @@ function respond(m, c)
     m.stopTyping();
 }
 
+function moderate(m)
+{
+    let noun = nouns[Math.floor(Math.random()*nouns.length)];
+    moderator.channels.get(moderationChannelId).send("What is " + noun + "?").then(msg => { setTimeout(() => msg.delete(), 5)});
+}
+
 bot1.login('first-token');
 bot2.login('second-token');
 bot3.login('third-token');
+moderator.login('moderator-token');
