@@ -1,5 +1,5 @@
 # Discord-Server-Simulator
-Simulates a Discord Server using OpenAI's GPT-3
+Simulates a Discord Server using OpenAI's GPT-2
 
 ![Image](https://i.postimg.cc/1tVkJgr1/image.png)
 This project is prototypal and not scalable.
