@@ -2,7 +2,10 @@ const botChannel = "general";
 const temp = 0.8;
 const length = 40;
 
-//python version 3.4+ required
+// max inter message delay (after processing time) in ms
+const maxDelay = 100000;
+
+// python version 3.4+ required
 const pyVer = 3.9;
 
 const Discord = require('discord.js');
@@ -123,7 +126,7 @@ const processMessage = (() => (bot, msg, id) {
 
                 if (fill.substring(fill.length - 1, fill.length) != ".") fill += "."
 
-                setTimeout(() => respond(msg.channel,fill), Math.floor(Math.random()*(100000)));
+                setTimeout(() => respond(msg.channel,fill), Math.floor(Math.random()*(maxDelay)));
 
                 isProcessing = false;
             });
