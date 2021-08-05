@@ -4,11 +4,6 @@
   **Discord Server Simulator** simulates a single-channel [Discord Server](https://discord.gg/utmeHgk7Fd). The script runs four bots, including _**three chatbots and one "Moderator"**_. The chatbots run on OpenAI's [GPT-2](https://openai.com/blog/better-language-models/) and conduct a **flowing conversation**. The chatbots speak in **one designated channel**, while the moderator keeps the conversation on track from behind the scenes. The audience (other members of the server) can **influence the conversation** with the `--influence` command, to any subject.
 </div>
 
-# Discord-Server-Simulator
-Simulates a Discord Server using OpenAI's [GPT-2](https://openai.com/blog/better-language-models/).
-
-This bot is built with Discord.JS and will require at least NodeJS 12.
-
 ### Demo Server Invite [Link](https://discord.gg/utmeHgk7Fd)
 
 ## Examples
