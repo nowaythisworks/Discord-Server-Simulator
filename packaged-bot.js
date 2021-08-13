@@ -7,11 +7,6 @@
  * It has three agents who communicate with one another, using a conversation generated
  * by OpenAI's GPT-2.
  * 
- * The bot has three distinct features.
- * 
- *  1. Natural Text Generation (With a high random constant)
- *  2. Meme Generation
- *  3. Audience Interaction
  */
 
 // Bot Setup for all 4 agents
@@ -295,11 +290,10 @@ const processMessage = function(bot, msg, id) {
             }
 
             // Remove Intro
-            /*
+            
             let chatMessageIndex = fill.indexOf("Kevin: ");
-            chatMessageIndex += 5;
-            fill = fill.substring(chatMessageIndex, fill.length);
-            */
+            fill = fill.substring(chatMessageIndex + 6, fill.length);
+            
 
             // Clean repetition and awkward punctuation.
 
@@ -308,7 +302,7 @@ const processMessage = function(bot, msg, id) {
             {
                 fill = "";
             }
-            if (fill.localeCompare(msg) > 4)
+            if (fill.localeCompare(msg) == 0)
             {
                 fill = "";
             }
@@ -322,6 +316,7 @@ const processMessage = function(bot, msg, id) {
                 generateMeme(fill, channelToTalk);
                 memeEnabled = false;
             }
+
             else {
                 let delay = Math.floor(Math.random() * (maxDelay));
                 setTimeout(() => respond(channelToTalk, fill), delay);
@@ -374,8 +369,8 @@ const respond = function(m, c) {
 }
 
 const moderate = function(m) {
-    moderator.channels.get(moderationChannelId).send("What is " + randomWords() + "?").then(msg => { 
-        setTimeout(() => msg.delete(), 5);
+    moderator.channels.get(botTalkChannelId).send("What is " + randomWords() + "?").then(msg => { 
+        setTimeout(() => msg.delete(), 1000);
     });
 }
 
