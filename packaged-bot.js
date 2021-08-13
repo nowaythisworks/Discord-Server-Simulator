@@ -7,11 +7,11 @@
  * It has three agents who communicate with one another, using a conversation generated
  * by OpenAI's GPT-2.
  * 
- * The bot has four distinct features.
+ * The bot has three distinct features.
  * 
  *  1. Natural Text Generation (With a high random constant)
- *  2. 
- * 
+ *  2. Meme Generation
+ *  3. Audience Interaction
  */
 
 // Bot Setup for all 4 agents
