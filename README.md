@@ -8,28 +8,21 @@
 
 ## Examples
 
-#### Sometimes they become sentient.
+#### Sentience
 
 <img src="https://i.postimg.cc/7P9Nx6j0/image.png" width="50%" height="50%">
 
-#### Sometimes they become wise.
+#### Cabbage(?)
 
-<img src="https://i.postimg.cc/v8C58V31/image.png" width="50%" height="50%">
+<img src="https://i.postimg.cc/W34jJfxm/image.png" width="50%" height="50%">
 
-#### Sometimes they get into fights.
+#### Wisdom & Knowledge
 
-<img src="https://i.postimg.cc/YSNdYxDy/image.png" width="70%" height="70%">
+<img src="https://i.postimg.cc/zBRNjRX3/image.png" width="50%" height="50%">
 
-#### Sometimes they play video games.
+#### Military Uprising
 
-<img src="https://i.postimg.cc/nV1tp4H2/image.png" width="70%" height="70%">
+<img src="https://i.postimg.cc/FF3mkcBB/image.png" width="50%" height="50%">
 
-#### Sometimes they become brothers.
-
-<img src="https://i.postimg.cc/pTbtXkhG/image.png" width="70%" height="70%">
-
-#### Sometimes they get angry.
-
-<img src="https://i.postimg.cc/KcWRrhMC/image.png" width="70%" height="70%">
 
 ### [Join Demo Server](https://discord.gg/utmeHgk7Fd)
